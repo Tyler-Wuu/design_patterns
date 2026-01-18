@@ -8,6 +8,10 @@ public class WalkBehavior extends MoveBehavior{
         super(newCharacter, newSpeed);
     }
 
+    /**
+     * Call the move(boolean) method in parent(MoveBehavior) class with parm false
+     * Display the animal character representation in terminal and move it forward
+     */
     @Override
     public void move() {
         super.move(false);
