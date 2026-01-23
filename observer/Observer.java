@@ -9,6 +9,7 @@ import java.util.Random;
 public abstract class Observer {
 
     protected Random rand;
+    
 
     public Observer(ArrayList<Baby> babies){
         this.rand = new Random();
