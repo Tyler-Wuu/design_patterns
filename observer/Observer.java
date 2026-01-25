@@ -13,7 +13,7 @@ public abstract class Observer {
     
     /**
      * Construtor of class Observer
-     * Intialize the variable and register themself as observer to the parm object
+     * Initialize  the variable and register themself as observer to the parm object
      * @param babies array list of baby the observer will register themself to
      */
     public Observer(ArrayList<Baby> babies){

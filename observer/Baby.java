@@ -5,8 +5,8 @@ import java.util.Random;
 
 /**
  * @author Tyler Wu
- * An subject to be observed
- * Contain the the baby's name, mimic baby's behavior through method like angryCry()
+ * A subject to be observed
+ * Contain the baby's name, mimic baby's behavior through method like angryCry()
  * hungryCry(), and wetCry() which send update to the observer
  * These can be adressed by method like receiveLove(), eat(), and getChange() which
  * need a Cry enumeration contain ANGRY, HUNGRY, WET as the field as precondition
@@ -56,7 +56,7 @@ public class Baby implements Subject{
     }
 
     /**
-     * Remove the parameter observer to the array list if it exist
+     * Remove the parameter observer from the array list if it exist
      * @param observerToRemove observer to remove
      */
     @Override
@@ -66,7 +66,7 @@ public class Baby implements Subject{
 
     /**
      * Send notification to every observer registered in the array list, including
-     * the type of Cry in the paramter and the instance of this baby itself
+     * the type of Cry in the parameter  and the instance of this baby itself
      * @param cry type of cry(Enum) baby currently have
      */
     @Override

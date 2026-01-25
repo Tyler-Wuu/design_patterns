@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 /**
  * @author Tyler Wu
- * Mom class is a observer, a child class of the observer class, recive update from the Subject
+ * Mom class is an observer, a child class of the observer class, recive update from the Subject
  * passively
  */
 public class Mom extends Observer{
@@ -18,8 +18,8 @@ public class Mom extends Observer{
     }
 
     /**
-     * Method respond to baby's status based on it's parameter when being called
-     * Mom will call method in Baby class conspond to the baby's status
+     * Method responds to baby's status based on its parameter when being called
+     * Mom will call method in Baby class corresponding to the baby's status
      * @param cry status of the baby in Cry enumeration class
      * @param baby which baby dad is notified from
      */

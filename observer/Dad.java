@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 /**
  * @author Tyler Wu
- * Dad class is a observer, a child class of the observer class, recive update from the Subject
+ * Dad class is an observer, a child class of the observer class, recive update from the Subject
  * passively
  */
 public class Dad extends Observer{
@@ -18,7 +18,7 @@ public class Dad extends Observer{
     }
 
     /**
-     * Method respond to baby's status based on it's parameter when being called
+     * Method respond to baby's status based on its parameter when being called
      * However, dad does not take care baby by doing his thing
      * @param cry status of the baby in Cry enumeration class
      * @param baby which baby dad is notified from
