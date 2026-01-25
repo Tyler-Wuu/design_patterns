@@ -4,13 +4,25 @@ import java.util.ArrayList;
 
 /**
  * @author Tyler Wu
+ * Mom class is a observer, a child class of the observer class, recive update from the Subject
+ * passively
  */
 public class Mom extends Observer{
 
+    /**
+     * Constructor of class Mom
+     * @param babies baby to register this instance as the observer 
+     */
     public Mom(ArrayList<Baby> babies){
         super(babies);
     }
 
+    /**
+     * Method respond to baby's status based on it's parameter when being called
+     * Mom will call method in Baby class conspond to the baby's status
+     * @param cry status of the baby in Cry enumeration class
+     * @param baby which baby dad is notified from
+     */
     @Override
     public void update(Cry cry, Baby baby){
         if(cry == Cry.ANGRY){
