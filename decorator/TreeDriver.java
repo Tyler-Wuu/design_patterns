@@ -17,7 +17,6 @@ public class TreeDriver {
 		System.out.println(tree);
 
 
-
 		while (true) {
 			String addition = getText("What would you like to add to your tree: '(S)tar', '(L)ights', or '(O)rnaments: ");
 			
@@ -44,6 +43,7 @@ public class TreeDriver {
 
         reader.close();
         System.out.println("Goodbye");
+
 	}
 
 	private String getText(String prompt) {
