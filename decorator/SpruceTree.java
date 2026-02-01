@@ -1,7 +1,9 @@
 package decorator;
 
-import java.util.ArrayList;
-
+/**
+ * A concrete object to be decorated
+ * will pass content in a file to the parent
+ */
 public class SpruceTree extends Tree{
 
     public SpruceTree(){
