@@ -1,5 +1,9 @@
 package state;
 
+/**
+ * Homestate class implemet state interface
+ * look at the interface to see what method this contain
+ */
 public class HomeState extends Application implements State {
     private TV tv;
 

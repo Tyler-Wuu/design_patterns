@@ -1,7 +1,10 @@
 package state;
 
+/**
+ * State interface
+ * contain press button methods that TV class hold and the watch method
+ */
 public interface State {
-    int myID = 0;
     public void pressHomeButton();
     public void pressNetflixButton();
     public void pressHuluButton();

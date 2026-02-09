@@ -2,16 +2,27 @@ package state;
 
 import java.util.ArrayList;
 
+/**
+ * HuluState class, child class of Application and implemet state interface
+ * look at the interface to see what method this contain
+ */
 public class HuluState extends Application implements State {
     private TV tv;
 
+    /**
+     * Constructor of the HuluState
+     * Will create a list of movie by default
+     * Movie's name start with "Hulu Movie #" + a integer < 5
+     * Tv's name start with "Hulu Movie #" + a integer < 5
+     * @param newTv a TV class that init this object 
+     */
     public HuluState(TV newTv) {
         this.tv = newTv;
         super.moives = new ArrayList<String>();
         super.tvShows = new ArrayList<String>();
         for (int i = 0; i < 5; ++i) {
-            super.moives.add("Hulu Movie #" + i);
-            super.tvShows.add("Hulu Show #" + i);
+            super.moives.add("Hulu Movie #" + (i + 1) );
+            super.tvShows.add("Hulu Show #" + (i + 1) );
         }
     }
 

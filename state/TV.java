@@ -2,7 +2,8 @@ package state;
 
 /**
  * @author Tyler Wu
- * Sorry, switching to google style since my other course requires it
+ * All the press button method just call the override method for current state
+ * Getters for the current state and the other state exist
  */
 public class TV {
   private State HomeState;
@@ -10,6 +11,9 @@ public class TV {
   private State HuluState;
   private State currentState;
 
+  /**
+   * Default constructor
+   */
   public TV() {
     this.HomeState = new HomeState(this);
     this.NetflixState = new NetflixState(this);
