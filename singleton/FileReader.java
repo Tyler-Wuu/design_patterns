@@ -9,9 +9,9 @@ import java.util.Scanner;
  * Responsible for reading file
  */
 public class FileReader {
-    private static final String TOPS_FILE_NAME = "design_patterns/singleton/tops.txt";
-    private static final String BOTTOMS_FILE_NAME = "design_patterns/singleton/bottoms.txt";
-    private static final String WHOLES_FILE_NAME = "design_patterns/singleton/wholes.txt";
+    private static final String TOPS_FILE_NAME = "design_patterns/singleton/txt/tops.txt";
+    private static final String BOTTOMS_FILE_NAME = "design_patterns/singleton/txt/bottoms.txt";
+    private static final String WHOLES_FILE_NAME = "design_patterns/singleton/txt/wholes.txt";
 
     public static ArrayList<ClothingItem> getTops(){
         return getClothing(TOPS_FILE_NAME);

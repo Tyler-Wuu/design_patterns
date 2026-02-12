@@ -4,6 +4,9 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Random;
 
+/**
+ * @author Tyler Wu
+ */
 public class OutfitCreator {
     private HashMap<ClothingPart, ArrayList<ClothingItem>> clothing;
     private Random rand;
