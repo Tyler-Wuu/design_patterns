@@ -6,15 +6,18 @@ public class Assignment {
     private Topic topic;
 
     public Assignment(String newTitle, String newDescription, Topic newTopic) {
-
+        this.title = newTitle;
+        this.description = newDescription;
+        this.topic = newTopic;
     }
 
-    public boolean hasTopic(Topic topic) {
-        return false;
+    public boolean hasTopic(Topic topicToCompare) {
+        return this.topic == topicToCompare;
     }
 
+    @Override
     public String toString() {
-        return null;
+        return title + " " + description + " " + topic;
     }
     
 }
