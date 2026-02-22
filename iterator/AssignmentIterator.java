@@ -2,10 +2,23 @@ package iterator;
 
 import java.util.Iterator;
 
+/**
+ * @author Tyler Wu
+ * AssignmentIterator Class inhert from java.util.Iterator
+ * Please note that this class does not have a override remove method
+ * unexpected behavior when remove is called
+ */
 public class AssignmentIterator implements Iterator<Assignment>{
     public Assignment[] assignments;
     private int position;
 
+    /**
+     * Constructor of AssignmentIterator, will create an Iterator for assignment that only
+     * contains the param topic
+     * it will hold an array with null if no topic match
+     * @param newAssignment array of assignment as data
+     * @param topic topic of this iterator's assignment will contain
+     */
     public AssignmentIterator(Assignment[] newAssignment, Topic topic) {
         this.assignments = new Assignment[newAssignment.length];
         // create stub array

@@ -1,5 +1,9 @@
 package iterator;
 
+/**
+ * @author Tyler Wu
+ * Assignment Class, contain the name, description, and topic for an assignment
+ */
 public class Assignment {
     private String title;
     private String description;
@@ -11,13 +15,21 @@ public class Assignment {
         this.topic = newTopic;
     }
 
+    /**
+     * @param topicToCompare topic to check if this assignment contain
+     * @return true if assignment has the param topic, false OW
+     */
     public boolean hasTopic(Topic topicToCompare) {
         return this.topic == topicToCompare;
     }
 
+    /**
+     * @return a string in the format of:
+     * [title] [description] [topic]
+     */
     @Override
     public String toString() {
-        return title + " " + description + " " + topic;
+        return this.title + " " + this.description + " " + this.topic;
     }
     
 }
