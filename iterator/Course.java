@@ -2,8 +2,8 @@ package iterator;
 
 /**
  * @author Tyler WU
- * Course Class, contain list of assignment, the course name, and course title
- * Sorry for bad javadoc
+ * Course Class
+ * Contain list of assignment, the course name, and course title
  */
 public class Course {
 
@@ -21,9 +21,9 @@ public class Course {
 
     /**
      * Add a new assignment to the list with the follow parm as content
-     * @param title the title of the assignment to create
-     * @param description the description of the assignment to create
-     * @param topic the topic of the assignment to create
+     * @param title the title of the assignment
+     * @param description the description of the assignment
+     * @param topic the topic of the assignment
      */
     public void addAssignment(String title, String description, Topic topic) {
         if (assignment.length < count + 1) {
@@ -37,7 +37,7 @@ public class Course {
     /**
      * Return an Iterator that contain assigment only have the parm topic
      * @param topic topic of the assignment must contain
-     * @return an Iterator object
+     * @return an Iterator object contains the assigment from this class with match topic
      */
     public AssignmentIterator createIterator(Topic topic) {
         return new AssignmentIterator(this.assignment, topic);

@@ -8,15 +8,15 @@ import java.util.Iterator;
  * Please note that this class does not have a override remove method
  * unexpected behavior when remove is called
  */
-public class AssignmentIterator implements Iterator<Assignment>{
+public class AssignmentIterator implements Iterator<Assignment> {
     public Assignment[] assignments;
     private int position;
 
     /**
      * Constructor of AssignmentIterator, will create an Iterator for assignment that only
      * contains the param topic
-     * it will hold an array with null if no topic match
-     * @param newAssignment array of assignment as data
+     * it will hold an array fill with null if no topic is matched from the parm newAssignment
+     * @param newAssignment array of assignment
      * @param topic topic of this iterator's assignment will contain
      */
     public AssignmentIterator(Assignment[] newAssignment, Topic topic) {
@@ -42,7 +42,7 @@ public class AssignmentIterator implements Iterator<Assignment>{
 
     @Override
     public boolean hasNext() {
-        return (position <= this.assignments.length) && (this.assignments[position] != null);
+        return (position < this.assignments.length) && (this.assignments[position] != null);
         // true if both the counter did not go over the size of the array 
         // AND the array at counter position has a valid element
     }

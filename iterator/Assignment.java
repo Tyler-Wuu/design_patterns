@@ -2,7 +2,8 @@ package iterator;
 
 /**
  * @author Tyler Wu
- * Assignment Class, contain the name, description, and topic for an assignment
+ * Assignment Class
+ * contain the name, description, and topic for an assignment
  */
 public class Assignment {
     private String title;
@@ -16,8 +17,8 @@ public class Assignment {
     }
 
     /**
-     * @param topicToCompare topic to check if this assignment contain
-     * @return true if assignment has the param topic, false OW
+     * @param topicToCompare topic to check with this assignment
+     * @return true if assignment contain the param topic, false OW
      */
     public boolean hasTopic(Topic topicToCompare) {
         return this.topic == topicToCompare;
